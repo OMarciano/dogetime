@@ -17,7 +17,7 @@ function fetchWeather(geo){
 			return;
 		}
 
-		var url = 'http://api.openweathermap.org/data/2.5/weather';
+		var url = 'https://api.openweathermap.org/data/2.5/weather';
 		url += '?lat=' + geo.location.latitude + '&lon=' + geo.location.longitude + '&appid=e72cf0b9d2bf2186c92c2460caae6c31';
 
 		$.getJSON(url, function(data){
